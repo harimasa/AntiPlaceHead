@@ -8,10 +8,10 @@ import net.minecraft.block.Blocks;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
-import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import org.lwjgl.glfw.GLFW;
+import net.minecraft.text.LiteralText;
 
 public class AntiPlaceHead implements ModInitializer {
 	private static final KeyBinding TOGGLE_MOD_KEY = KeyBindingHelper.registerKeyBinding(new KeyBinding(
@@ -45,9 +45,9 @@ public class AntiPlaceHead implements ModInitializer {
 		if (TOGGLE_MOD_KEY.wasPressed()) {
 			modEnabled = !modEnabled;
 			if (modEnabled) {
-				MinecraftClient.getInstance().inGameHud.getChatHud().addMessage(Text.literal("AntiPlaceHead §2включен"));
+				MinecraftClient.getInstance().inGameHud.getChatHud().addMessage(new LiteralText("AntiPlaceHead §2включен"));
 			} else {
-				MinecraftClient.getInstance().inGameHud.getChatHud().addMessage(Text.literal("AntiPlaceHead §4выключен"));
+				MinecraftClient.getInstance().inGameHud.getChatHud().addMessage(new LiteralText("AntiPlaceHead §4выключен"));
 			}
 		}
 	}
