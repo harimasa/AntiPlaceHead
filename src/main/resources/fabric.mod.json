@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "antiplacehead",
+	"version": "${version}",
+	"name": "AntiPlaceHead",
+	"description": "The mod is for people who play on Anarchy/Grief servers, where it is possible to put all sorts of runes/spheres etc.",
+	"authors": [
+		"deadlyPig_"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/antiplacehead",
+		"sources": "https://github.com/deadlyPig/AntiPlaceHead",
+		"issues": "https://github.com/deadlyPig/AntiPlaceHead/issues"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/antiplacehead/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ru.matt.AntiPlaceHead"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
